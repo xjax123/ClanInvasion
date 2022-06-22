@@ -1,0 +1,1196 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans);*/
+
+/* GENERAL STYLES */
+html {
+	overflow-y: hidden;
+}
+body {
+	background-color: #000024;
+	color: #fff;
+	font-family: 'Open Sans', Verdana, sans-serif;
+	font-size: 9pt;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #aaa;
+}
+a:hover {
+	color: #fff;
+}
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* HEADER */
+h1 {
+	color: #fff;
+	left: 1em;
+	pointer-events: none;
+	position: fixed;
+	text-align: center;
+	/*text-shadow: 0px 0px 4px #aaa;*/
+	top: 2.25em;
+	z-index: 1;
+}
+img.logo {
+	left: 1em;
+	position: fixed;
+	top: 1em;
+	width: 26em;
+	z-index: 1;
+}
+div.info-links {
+	display: inline-block;
+	left: 9em;
+	position: fixed;
+	top: 9em;
+	z-index: 1;
+}
+
+/* DISCLAIMER / ABOUT PAGES STYLES */
+div.popup-ct {
+	background-color: #f0f0f0;
+	border: 2px solid #333;
+	box-shadow: 1px 1px 0px #fff, -1px -1px 0 #fff;
+	color: #333;
+	font-size: 1.2em;
+	left: calc(50% - 17.5em);
+	opacity: 0;
+	padding: 1em 0;
+	position: fixed;
+	top: -100%;
+	transition: opacity .5s, top .5s ease-in-out 0s;
+	width: 35em;
+	z-index: 10;
+}
+div.popup-ct.visible {
+	opacity: 1;
+	top: 1em;
+}
+div.popup-ct > h2 {
+	font-size: 1.5em;
+	margin: 0 0 .1em 0;
+	padding: 0 .66em;
+}
+div.popup-ct > p {
+	margin: .75em 0 .25em 0;
+	padding: 0 1em;
+}
+div.popup-ct a:hover {
+	color: #666;
+}
+div.popup-ct button.close {
+	background: none;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: .25em;
+	top: .5em;
+}
+@media (max-width: 600px) {
+	div.popup-ct {
+		font-size: 1em;
+	}
+}
+@media (max-width: 500px) {
+	div.popup-ct {
+		font-size: .8em;
+	}
+}
+
+/* CONTROL PANEL STYLES */
+div.controls-tab-title {
+	background-image: url('./img/tab-title.png');
+	cursor: pointer;
+	font-size: 1.1em;
+	font-weight: bold;
+	height: 120px;
+	position: fixed;
+	right: 10px;
+	/*transform: rotate(-90deg);*/
+	transition: right 1s cubic-bezier(1.000, -0.0, 0.5, 1.35);
+	width: 30px;
+	z-index: 1;
+}
+div.controls-tab-title.settings {
+	top: calc(5% + 10px);
+}
+div.controls-tab-title.selection {
+	top: calc(5% + 140px);
+}
+div.controls-tab-title.route {
+	top: calc(5% + 270px);
+}
+div.controls-tab-title.userdata {
+	top: calc(5% + 400px);
+}
+div.controls-tab-title > span {
+	display: inline-block;
+	left: -114px;
+	position: absolute;
+	top: -18px;
+	transform: rotate(-90deg);
+	transform-origin: right top;
+	-webkit-user-select: none;
+	user-select: none;
+	width: 120px;
+}
+div.controls-tab-title.expanded {
+	right: 420px;
+}
+div.controls-tab-title:before {
+	background-color: #090;
+	border-radius: 50%;
+	box-shadow: inset 0 0 8px #000;
+	content: '';
+	display: block;
+	height: 10px;
+	left: 11px;
+	position: absolute;
+	top: 14px;
+	width: 10px;
+	z-index: 0;
+}
+
+div.controls-tab-title.active:before {
+	background-color: #0f0;
+	box-shadow: 0 0 10px #0f0, 0 0 15px #0f0;
+}
+
+div.controls-background {
+	background-color: #222;
+	background-image: url('./img/metal-three-mod3.png');
+	box-shadow: inset 0px 0px 10px #666;
+	height: 90%;
+	min-height: 400px;
+	overflow: visible;
+	position: fixed;
+	right: -390px;
+	top: 5%;
+	transition: right 1s cubic-bezier(1, 0, 0.5, 1.35);
+	width: 400px;
+	z-index: 2;
+}
+div.controls-background.expanded {
+	right: 20px;
+}
+div.controls-background:after {
+	background-image: url('./img/pipe.png');
+	content: '';
+	display: block;
+	height: 300px;
+	right: -100px;
+	position: absolute;
+	top: calc(50% - 150px);
+	width: 100px;
+}
+
+div.controls {
+	font-size: 1.2em;
+	height: 90%;
+	min-height: 400px;
+	overflow: hidden;
+	padding: 0;
+	position: fixed;
+	right: -390px;
+	top: 5%;
+	transition: right 1s cubic-bezier(1, 0, 0.5, 1.35);
+	width: 400px;
+	z-index: 3;
+}
+div.controls.expanded {
+	right: 20px;
+}
+div.controls:after {
+	box-shadow: inset 0px 0px 10px #666;
+	content: '';
+	height: 100%;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+}
+div.controls > div {
+	background-attachment: local;
+	background-color: #333;
+	background-image: url('./img/metal-three-mod2.png');
+	/*min-height: calc(100% - 2em);*/
+	height: calc(100% - 2em);
+	/*right: -100%;*/
+	right: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 1em 15px;
+	position: absolute;
+	/*top: 0;*/
+	top: -100%;
+	transition: top .5s;
+	/*transition-property: right;
+	transition-duration: 1s;
+	transition-delay: 0s;
+	transition-timing-function: cubic-bezier(1, 0.4, 0.4, 1);*/
+	width: calc(100% - 30px);
+}
+div.controls:nth-child(1) {
+	z-index: 1;
+}
+div.controls:nth-child(2) {
+	z-index: 2;
+}
+div.controls:nth-child(3) {
+	z-index: 3;
+}
+div.controls > div.active {
+	/*right: 0;*/
+	top: 0;
+	transition-delay: .5s;
+	z-index: 5;
+	overflow-y: none;
+}
+div.controls h2 {
+	/*margin: 1em 0;*/
+	/*border: 1px solid black;*/
+	display: inline-block;
+	font-size: 1.2em;
+	margin: .3em 0;
+	padding: 0;
+}
+div.controls h3 {
+	margin: .4em 0;
+	font-size: 1em;
+	padding: 0;
+}
+div.controls p {
+	margin: 0.4em 0;
+}
+div.controls hr {
+	border-width: 2px;
+	border-color: #555;
+	clear: both;
+	margin: 1em 0;
+}
+div.controls div.control-group {
+	margin: 0 0 1em 0;
+}
+div.controls div.control-group + div.control-group {
+	margin: 1em 0;
+}
+div.controls div.planet-info {
+	background-repeat: no-repeat;
+	background-position: 90% 0%;
+	position: relative;
+}
+div.controls div.stop-info {
+	background-repeat: no-repeat;
+	background-position: 80% 0;
+	background-size: 0; /*32px 32px;*/
+	margin: 3em 0 0 0;
+	position: relative;
+}
+div.controls div.stop-info:before {
+	content: '\f175';
+	font-family: 'FontAwesome';
+	font-size: 1.4em;
+	height: 1em;
+	left: 1em;
+	position: absolute;
+	text-align: left;
+	top: -1.5em;
+	width: 100%;
+}
+div.controls div.stop-info[data-stop-idx="0"] {
+	margin: 0;
+}
+div.controls div.stop-info[data-stop-idx="0"]:before {
+	display: none;
+}
+div.controls div.stop-info span.route-stop-info {
+	font-size: .8em;
+	left: 3.5em;
+	position: absolute;
+	top: -2.4em;
+}
+div.controls div.stop-info span.route-stop-info.unknown {
+	color: #fb0;
+}
+div.controls div.planet-info.liao,
+div.controls div.stop-info.capellan-confederation {
+	background-image: url("./img/liao_64.png");
+}
+div.controls div.planet-info.kurita,
+div.controls div.stop-info.draconis-combine {
+	background-image: url("./img/kurita_64.png");
+}
+div.controls div.planet-info.davion,
+div.controls div.stop-info.federated-suns {
+	background-image: url("./img/davion_64.png");
+}
+div.controls div.planet-info.marik,
+div.controls div.stop-info.free-worlds-league {
+	background-image: url("./img/marik_64.png");
+}
+div.controls div.planet-info.steiner,
+div.controls div.stop-info.lyran-commonwealth {
+	background-image: url("./img/steiner_64.png");
+}
+div.controls div.planet-info.comstar,
+div.controls div.stop-info.comstar {
+	background-image: url("./img/comstar_64.png");
+}
+div.controls div.planet-info.taurian-concordat,
+div.controls div.stop-info.taurian-concordat {
+	background-image: url("./img/taurian_concordat_64.png");
+}
+div.controls div.planet-info.magistracy-of-canopus,
+div.controls div.stop-info.magistracy-of-canopus {
+	background-image: url("./img/magistracy_of_canopus_64.png");
+}
+div.controls div.planet-info.marian-hegemony,
+div.controls div.stop-info.marian-hegemony {
+	background-image: url("./img/marian_hegemony_64.png");
+}
+div.controls div.planet-info.oberon-confederation,
+div.controls div.stop-info.oberon-confederation {
+	background-image: url("./img/oberon_confederation_64.png");
+}
+div.controls div.planet-info.outworlds-alliance,
+div.controls div.stop-info.outworlds-alliance {
+	background-image: url("./img/outworlds_alliance_64.png");
+}
+
+div.controls div.stop-info {
+	background-image: none;
+}
+div.controls div.planet-info span.neighbor.uninhabited {
+	color: #a00;
+	font-style: italic;
+}
+
+div.controls input[type="text"] {
+	border: none;
+	background-color: rgba(150,150,150,.35);
+	box-shadow: 1px 1px 3px #000;
+	color: #fff;
+	padding: .5em .25em;
+	outline: none;
+}
+div.controls input[type="text"]:focus {
+	background-color: rgba(255,255,225,.9);
+	color: #444;
+}
+div.controls button {
+	background: none;
+	/* border: 1px solid #fff !important; */
+	border: 2px outset #aaa;
+	border-radius: none;
+	color: #fff;
+	cursor: pointer;
+	margin: 0;
+	padding: .25em .5em;
+	transition: background-color .3s
+}
+div.controls button:active {
+	border: 2px inset #aaa;
+}
+div.controls button:disabled {
+	color: #999;
+}
+div.controls button.confirm {
+	background-color: #a00;
+}
+div.controls p.find-ct {
+	position: relative;
+}
+div.controls input.find-field {
+	margin: 0 0 0 .5em;
+	width: 14em;
+}
+div.controls button.find-btn {
+	margin: 0 0 0 .5em;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+div.controls div.selection-ct {
+	padding: .5em 0;
+}
+div.controls div.selection-ct div.userdata-rte {
+	/*background-image: url('./img/natural_paper.png');*/
+	background-color: rgba(150,150,150,.35);
+	box-shadow: 1px 1px 3px #000;
+	color: #fff;
+	font-size: .8em;
+	margin: 0;
+	padding: .5em .45em;
+	transition: border .5s;
+}
+div.controls div.selection-ct div.userdata-rte.mce-content-body {
+	background-color: rgba(255,255,225,.9);
+	color: #444;
+}
+div.controls div.selection-ct div.userdata-rte p {
+	line-height: 1.1em;
+	margin: .2em 0;
+	min-height: 1.1em;
+}
+div.controls div.selection-ct div.userdata-rte span {
+	font-size: 1em !important;
+}
+div.controls div.selection-ct div.userdata-rte blockquote {
+	background-color: #444;
+	border: 1px solid #666;
+	color: #fff;
+	margin: .5em 0 .5em 2em;
+	padding: .2em;
+}
+div.controls div.selection-ct div.userdata-rte.mce-content-body blockquote {
+	background-color: #ccc;
+	color: #444;
+}
+div.controls div.planet-info p.aliases {
+	color: #ddd;
+	font-size: .8em;
+	margin: 0;
+}
+div.controls div.planet-info button.center,
+div.controls div.stop-info button.center {
+	margin: 0 0 0 .5em;
+	padding: 0 .25em;
+}
+div.controls div.planet-info button.center,
+div.controls div.planet-info button.start-route,
+div.controls div.planet-info button.append-route {
+	margin: 0 .5em 0 0;
+	padding: 0 .25em;
+}
+div.controls div.planet-info button.remove,
+div.controls div.stop-info button.remove,
+div.controls div.stop-info button.up,
+div.controls div.stop-info button.down {
+	position: absolute;
+	padding: 0 .25em;
+	top: 0;
+	right: 0;
+}
+div.controls div.stop-info button.up {
+	right: 2em;
+}
+div.controls div.stop-info:first-child button.up {
+	color: #666;
+}
+div.controls div.stop-info button.down {
+	right: 3.75em;
+}
+div.controls div.stop-info:last-child button.down {
+	color: #666;
+}
+div.controls div.stop-info span.coordinates {
+	font-size: .8em;
+}
+div.controls p.route-ct {
+	position: relative;
+}
+div.controls div.userdata-drop-ct {
+	border: 2px dashed #aaa;
+	color: rgba(200,200,200,.5);
+	font-size: 1.5em;
+	font-weight: bold;
+	height: 7em;
+	line-height: 2.5em;
+	margin: .5em 0 0 0;
+	position: relative;
+	text-align: center;
+	transition: background-color .4s, color .4s;
+	width: 100%;
+}
+div.controls div.userdata-drop-ct.dragover {
+	background-color: rgba(0,0,0,.5);
+	color: #eee;
+}
+div.controls div.userdata-drop-ct > span.fa {
+	font-size: 2em;
+	position: relative;
+	top: .4em;
+}
+div.controls div.userdata-drop-ct span.small {
+	display: inline-block;
+	font-size: .65em;
+	font-weight: normal;
+	position: relative;
+	top: -1.5em;
+}
+div.controls div.userdata-drop-ct label {
+	color: #ccc;
+	cursor: pointer;
+	text-decoration: underline;
+}
+div.controls div.userdata-drop-ct label:hover {
+	color: #fff;
+}
+div.controls div.userdata-drop-ct > div {
+	align-items: center;
+	animation-name: fade;
+	animation-iteration-count: 1;
+	animation-duration: 5s;
+	bottom: 0;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	justify-content: center;
+	left: 0;
+	line-height: 1.1em;
+	opacity: 0;
+	padding: .5em;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: auto;
+}
+div.controls div.userdata-drop-ct > div.userdata-confirm {
+	animation-name: fade-in;
+	animation-duration: .5s;
+	background-color: rgba(200,150,20,.9);
+	font-weight: normal;
+	opacity: 1;
+}
+div.controls div.userdata-drop-ct > div.userdata-confirm.closing {
+	animation-name: fade-out;
+	opacity: 0;
+}
+div.controls div.userdata-drop-ct > div.userdata-confirm > p {
+	font-size: .6em;
+	width: 100%;
+}
+div.controls div.userdata-drop-ct > div.userdata-confirm > button {
+	background-color: #333;
+	margin: .5em;
+}
+div.controls div.userdata-drop-ct > div.userdata-message {
+	background-color: rgba(80,80,80,.8);
+}
+div.controls div.userdata-drop-ct > div.userdata-error {
+	background-color: rgba(210, 50, 50, .8);
+}
+div.controls div.userdata-drop-ct > div.userdata-loading {
+	background-color: rgba(50,50,50,.8);
+}
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fade-out {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+div.controls .userdata input[type="file"] {
+	display: none;
+}
+div.controls input.route-field {
+	margin: 0 0 0 .5em;
+	width: 13em;
+}
+div.controls button.route-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+div.controls div.stops-ct {
+	padding: .5em 0;
+}
+div.controls input[type="checkbox"],
+div.controls input[type="radio"] {
+	display: none;
+}
+div.controls input[type="checkbox"] + label,
+div.controls input[type="radio"] + label {
+	cursor: pointer;
+	display: inline-block;
+	/*width: 20px;*/
+	height: 1em;
+	padding-left: 2em;
+	position: relative;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none;           /* Non-prefixed version, currently */
+	vertical-align: top;
+}
+div.controls input[type="radio"] + label:before,
+div.controls input[type="checkbox"] + label:before {
+	border-radius: .2em;
+	box-shadow: inset 0 0 6px #000;
+	/*box-shadow: 0 0 10px #f00, 0 0 15px #f00;*/
+	content: '';
+	display: inline-block;
+	height: .4em;
+	left: 0;
+	position: absolute;
+	top: .5em;
+	width: .4em;
+}
+div.controls input[type="checkbox"] + label:after {
+	background-color: rgba(255, 0, 0, .8);
+	border-radius: .2em;
+	box-shadow: 0 0 8px #f00, 0 0 12px #f00;
+	content: '';
+	display: inline-block;
+	height: .4em;
+	left: .9em;
+	position: absolute;
+	top: .5em;
+	width: .4em;
+}
+div.controls input[type="checkbox"] + label:before {
+	background-color: rgba(0, 255, 0, .8);
+}
+div.controls input[type="checkbox"]:checked + label:before {
+	box-shadow: 0 0 8px #0f0, 0 0 12px #0f0;
+}
+div.controls input[type="checkbox"]:checked + label:after {
+	box-shadow: inset 0 0 5px #000;
+}
+div.controls input[type="radio"] + label:before {
+	background-color: rgba(0, 255, 0, .8);
+}
+div.controls input[type="radio"]:checked + label:before {
+	box-shadow: 0 0 8px #0f0, 0 0 12px #0f0;
+}
+
+
+div.controls p.error {
+	color: #e00;
+	display: none;
+	/*font-size: 1.2em;*/
+	font-weight: bold;
+	text-shadow: 0 0 2px #000;
+}
+div.controls p.error.visible {
+	display: block;
+}
+div.controls p.more-button {
+	cursor: pointer;
+	/*font-size: .75em;*/
+}
+div.controls div.more {
+}
+/* MAP CONTAINER DIV */
+div.map-ct {
+	position: absolute;
+	border: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+}
+/* GENERAL SVG MAP STYLES */
+svg {
+	margin: 0;
+	padding: 0;
+	pointer-events: all;
+}
+svg.map {
+	height: 100%;
+	width: 100%;
+}
+svg.dragging {
+	cursor: move !important;
+}
+/* AREA / BORDER STYLING */
+svg path.border {
+	fill: transparent;
+	stroke: transparent;
+	stroke-width: 0;
+	opacity: 1;
+	transition: opacity 1s, stroke-width 1s; /*, fill 1s;*/
+}
+svg.borders-lines path.border {
+	stroke: #cdcdcd;
+	stroke-width: 2;
+}
+svg path.border.taurian-concordat,
+svg path.border.aurigan-coalition,
+svg path.border.magistracy-of-canopus,
+svg path.border.marian-hegemony,
+svg path.border.lothian-league,
+svg path.border.illyrian-palatinate,
+svg path.border.circinus-federation,
+svg path.border.morgraines-valkyrate,
+svg path.border.oberon-confederation,
+svg path.border.elysian-fields,
+svg path.border.outworlds-alliance,
+svg path.border.tortuga-dominions {
+	opacity: 0;
+}
+svg.periphery-states path.border.taurian-concordat,
+svg.periphery-states path.border.aurigan-coalition,
+svg.periphery-states path.border.magistracy-of-canopus,
+svg.periphery-states path.border.marian-hegemony,
+svg.periphery-states path.border.lothian-league,
+svg.periphery-states path.border.illyrian-palatinate,
+svg.periphery-states path.border.circinus-federation,
+svg.periphery-states path.border.morgraines-valkyrate,
+svg.periphery-states path.border.oberon-confederation,
+svg.periphery-states path.border.elysian-fields,
+svg.periphery-states path.border.outworlds-alliance,
+svg.periphery-states path.border.tortuga-dominions {
+	opacity: 1;
+}
+svg.borders-hide path.border {
+	opacity: 0 !important;
+}
+/* Border line colors */
+svg path.border.capellan-confederation {
+	stroke: #426e33;
+}
+svg path.border.draconis-combine {
+	stroke: #a8281b;
+}
+svg path.border.federated-suns {
+	stroke: #9c6127;
+}
+svg path.border.free-worlds-league {
+	stroke: #64508d;
+}
+svg path.border.lyran-commonwealth {
+	stroke: #3f7aaa;
+}
+svg path.border.taurian-concordat {
+	stroke: #b55731;
+}
+/*svg path.border.aurigan-coalition {
+	stroke: rgba(218,74,47,1);
+}*/
+svg path.border.magistracy-of-canopus {
+	stroke: #2d9889;
+}
+svg path.border.marian-hegemony {
+	stroke: #e68a4b;
+}
+svg path.border.oberon-confederation {
+	stroke: #c79f00;
+}
+svg path.border.outworlds-alliance {
+	stroke: #969179;
+}
+svg path.border.periphery {
+	stroke: #dcdcdc;
+}
+/* Border fill colors / patterns */
+svg.borders-hatch path.border {
+	fill: url(#hatch-periphery);
+}
+svg.borders-fill path.border {
+	fill: rgba(200,200,200,.6);
+}
+svg.borders-hatch path.border.capellan-confederation {
+	fill: url(#hatch-capellan-confederation);
+}
+svg.borders-sigils path.border.capellan-confederation {
+	fill: url(#house-bg-capellan-confederation);
+}
+svg.borders-fill path.border.capellan-confederation {
+	fill: rgba(90,170,80,.85);
+}
+svg.borders-hatch path.border.draconis-combine {
+	fill: url(#hatch-draconis-combine);
+}
+svg.borders-sigils path.border.draconis-combine {
+	fill: url(#house-bg-draconis-combine);
+}
+svg.borders-fill path.border.draconis-combine {
+	fill: rgba(245,60,43,.85);
+}
+svg.borders-hatch path.border.federated-suns {
+	fill: url(#hatch-federated-suns);
+}
+svg.borders-sigils path.border.federated-suns {
+	fill: url(#house-bg-federated-suns);
+}
+svg.borders-fill path.border.federated-suns {
+	fill: rgba(210,150,55,.85);
+}
+svg.borders-hatch path.border.free-worlds-league {
+	fill: url(#hatch-free-worlds-league);
+}
+svg.borders-sigils path.border.free-worlds-league {
+	fill: url(#house-bg-free-worlds-league);
+}
+svg.borders-fill path.border.free-worlds-league {
+	fill: rgba(150,105,205,.85);
+}
+svg.borders-hatch path.border.lyran-commonwealth {
+	fill: url(#hatch-lyran-commonwealth);
+}
+svg.borders-sigils path.border.lyran-commonwealth {
+	fill: url(#house-bg-lyran-commonwealth);
+}
+svg.borders-fill path.border.lyran-commonwealth {
+	fill: rgba(90,180,240,.85);
+}
+svg.borders-hatch path.border.taurian-concordat {
+	fill: url(#hatch-taurian-concordat);
+}
+svg.borders-sigils path.border.taurian-concordat {
+	fill: url(#house-bg-taurian-concordat);
+}
+svg.borders-fill path.border.taurian-concordat {
+	fill: rgba(216, 104, 60, .85);
+}
+svg.borders-sigils path.border.aurigan-coalition {
+	fill: url(#house-bg-aurigan-coalition);
+}
+svg.borders-hatch path.border.magistracy-of-canopus {
+	fill: url(#hatch-magistracy-of-canopus);
+}
+svg.borders-sigils path.border.magistracy-of-canopus {
+	fill: url(#house-bg-magistracy-of-canopus);
+}
+svg.borders-fill path.border.magistracy-of-canopus {
+	fill: rgba(67, 224, 200, .85);
+}
+svg.borders-hatch path.border.marian-hegemony {
+	fill: url(#hatch-marian-hegemony);
+}
+svg.borders-sigils path.border.marian-hegemony {
+	fill: url(#house-bg-marian-hegemony);
+}
+svg.borders-fill path.border.marian-hegemony {
+	fill: rgba(255,152,84, .65);
+}
+svg.borders-hatch path.border.oberon-confederation {
+	fill: url(#hatch-oberon-confederation);
+}
+svg.borders-sigils path.border.oberon-confederation {
+	fill: url(#house-bg-oberon-confederation);
+}
+svg.borders-fill path.border.oberon-confederation {
+	fill: rgba(234,183,0, .6);
+}
+svg.borders-hatch path.border.outworlds-alliance {
+	fill: url(#hatch-outworlds-alliance);
+}
+svg.borders-sigils path.border.outworlds-alliance {
+	fill: url(#house-bg-outworlds-alliance);
+}
+svg.borders-fill path.border.outworlds-alliance {
+	fill: rgba(198,191,161, .5);
+}
+svg.borders-sigils path.border.lothian-league {
+	fill: url(#house-bg-lothian-league);
+}
+svg.borders-sigils path.border.illyrian-palatinate {
+	fill: url(#house-bg-illyrian-palatinate);
+}
+svg.borders-sigils path.border.circinus-federation {
+	fill: url(#house-bg-circinus-federation);
+}
+svg.borders-sigils path.border.morgraines-valkyrate {
+	fill: url(#house-bg-morgraines-valkyrate);
+}
+svg.borders-sigils path.border.elysian-fields {
+	fill: url(#house-bg-elysian-fields);
+}
+svg.borders-sigils path.border.tortuga-dominions {
+	fill: url(#house-bg-tortuga-dominions);
+}
+
+/* Firefox specific hack.
+ * This becomes necessary because Firefox hash references only work for ids in the
+ * same document. Since the patterns are defined in the svg, and not in the parent
+ * document, they can't be referenced.
+ * The solution for FF is to reference an id in an external svg document, but that
+ * doesn't work in Chrome and Edge.
+ * see also http://stackoverflow.com/questions/15842224/firefox-svg-with-fillurlid-style-in-external-stylesheet-broken-inline-style
+ *
+ * I guess the safest solution would be to just put the style into the respective
+ * elements directly (using .attr('style') in javascript), but that goes against
+ * the idea of just having to set a class on the svg element to change path appearance.
+ */
+@-moz-document url-prefix() {
+	svg.borders-hatch path.border {
+		fill: url(./img/patterns.svg#hatch-periphery);
+	}
+	svg.borders-hatch path.border.capellan-confederation {
+		fill: url(./img/patterns.svg#hatch-capellan-confederation);
+	}
+	svg.borders-sigils path.border.capellan-confederation {
+		fill: url(./img/patterns.svg#house-bg-capellan-confederation);
+	}
+	svg.borders-hatch path.border.draconis-combine {
+		fill: url(./img/patterns.svg#hatch-draconis-combine);
+	}
+	svg.borders-sigils path.border.draconis-combine {
+		fill: url(./img/patterns.svg#house-bg-draconis-combine);
+	}
+	svg.borders-hatch path.border.federated-suns {
+		fill: url(./img/patterns.svg#hatch-federated-suns);
+	}
+	svg.borders-sigils path.border.federated-suns {
+		fill: url(./img/patterns.svg#house-bg-federated-suns);
+	}
+	svg.borders-hatch path.border.free-worlds-league {
+		fill: url(./img/patterns.svg#hatch-free-worlds-league);
+	}
+	svg.borders-sigils path.border.free-worlds-league {
+		fill: url(./img/patterns.svg#house-bg-free-worlds-league);
+	}
+	svg.borders-hatch path.border.lyran-commonwealth {
+		fill: url(./img/patterns.svg#hatch-lyran-commonwealth);
+	}
+	svg.borders-sigils path.border.lyran-commonwealth {
+		fill: url(./img/patterns.svg#house-bg-lyran-commonwealth);
+	}
+	svg.borders-hatch path.border.taurian-concordat {
+		fill: url(./img/patterns.svg#hatch-taurian-concordat);
+	}
+	svg.borders-sigils path.border.taurian-concordat {
+		fill: url(./img/patterns.svg#house-bg-taurian-concordat);
+	}
+	svg.borders-hatch path.border.magistracy-of-canopus {
+		fill: url(./img/patterns.svg#hatch-magistracy-of-canopus);
+	}
+	svg.borders-sigils path.border.magistracy-of-canopus {
+		fill: url(./img/patterns.svg#house-bg-magistracy-of-canopus);
+	}
+	svg.borders-hatch path.border.marian-hegemony {
+		fill: url(./img/patterns.svg#hatch-marian-hegemony);
+	}
+	svg.borders-sigils path.border.marian-hegemony {
+		fill: url(./img/patterns.svg#house-bg-marian-hegemony);
+	}
+	svg.borders-hatch path.border.oberon-confederation {
+		fill: url(./img/patterns.svg#hatch-oberon-confederation);
+	}
+	svg.borders-sigils path.border.aurigan-coalition {
+		fill: url(./img/patterns.svg#house-bg-aurigan-coalition);
+	}
+	svg.borders-sigils path.border.oberon-confederation {
+		fill: url(./img/patterns.svg#house-bg-oberon-confederation);
+	}
+	svg.borders-hatch path.border.outworlds-alliance {
+		fill: url(./img/patterns.svg#hatch-outworlds-alliance);
+	}
+	svg.borders-sigils path.border.outworlds-alliance {
+		fill: url(./img/patterns.svg#house-bg-outworlds-alliance);
+	}
+	svg.borders-sigils path.border.lothian-league {
+		fill: url(./img/patterns.svg#house-bg-lothian-league);
+	}
+	svg.borders-sigils path.border.illyrian-palatinate {
+		fill: url(./img/patterns.svg#house-bg-illyrian-palatinate);
+	}
+	svg.borders-sigils path.border.circinus-federation {
+		fill: url(./img/patterns.svg#house-bg-circinus-federation);
+	}
+	svg.borders-sigils path.border.morgraines-valkyrate {
+		fill: url(./img/patterns.svg#house-bg-morgraines-valkyrate);
+	}
+	svg.borders-sigils path.border.elysian-fields {
+		fill: url(./img/patterns.svg#house-bg-elysian-fields);
+	}
+	svg.borders-sigils path.border.tortuga-dominions {
+		fill: url(./img/patterns.svg#house-bg-tortuga-dominions);
+	}
+}
+
+
+/* PLANET CIRCLES STYLING */
+svg g.planet-circles circle {
+	cursor: default;
+	opacity: 0;
+	pointer-events: none;
+	transition: stroke .5s, opacity .5s;
+	stroke-width: 3px;
+	stroke: transparent;
+}
+svg g.planet-circles path.capital {
+	fill: none;
+	opacity: 0;
+	transition: opacity .5s;
+	stroke-width: 2;
+}
+
+svg.planets-all-hidden g.planet-circles path.capital,
+svg.planets-all g.planet-circles path.capital,
+svg.planets-minors g.planet-circles path.capital,
+svg.planets-capitals g.planet-circles path.capital {
+	opacity: 1;
+}
+svg.planets-userdata-visible g.planet-circles circle.has-userdata,
+svg.planets-userdata-highlight g.planet-circles circle.has-userdata {
+	stroke: #fc0;
+	stroke-width: 2px;
+}
+
+
+circle.planet:hover
+{
+	stroke: #ccc;
+}
+
+circle.planet.selected
+{
+	stroke: #fff !important;
+	stroke-width: 3px !important;
+}
+
+svg g.planet-circles path.capital {
+	/*fill: rgba(255,255,255,.6);*/
+	pointer-events: none;
+}
+
+/*path {
+	stroke-width: 2 !important;
+	stroke: #fff !important;
+}*/
+
+/* PLANET NAMES STYLING */
+svg g.planet-names text {
+	fill: #fff;
+	opacity: 0;
+	pointer-events: none !important;
+	transition: opacity 1s;
+}
+
+svg g.planet-names text.hidden-system {
+	fill: #ee0;
+	font-style: italic;
+	/*text-shadow: 1px 1px #999;*/
+}
+
+svg g.planet-names text.depot {
+	fill: #0e0;
+	/*text-shadow: 1px 1px #999;*/
+}
+
+/* JUMP RANGE INDICATOR STYLES */
+ svg circle.jump-range {
+	fill: transparent;
+	fill: url(#circles-1);
+	fill: rgba(255, 255, 255, 0.1);
+	opacity: 0;
+	pointer-events: none;
+	stroke: rgba(255, 255, 255, 0.5);
+	stroke-dasharray: 10,10;
+	stroke-width: 2px;
+	transition: opacity .5s;
+}
+svg.zoomed-in circle.jump-range.visible {
+	opacity: 1;
+}
+
+/* JUMP PATH STYLES */
+svg g.jump-routes path {
+	opacity: 1;
+	stroke: rgba(255, 255, 255, .7);/*#eee;*/
+	stroke-width: 2px;
+	transition: opacity .5s;
+}
+svg g.jump-routes path.unknown {
+	stroke: rgba(255, 210, 0, .7);
+	stroke-dasharray: 8, 8;
+}
+svg.route-hidden g.jump-routes path {
+	opacity: 0;
+}
+
+/* STATE LABEL STYLES */
+svg g.state-labels{
+	opacity: 0;
+	transition: opacity .5s, transform .25s;
+}
+svg.labels-all g.state-labels {
+	opacity: 1;
+}
+svg g.state-labels > g.out-of-vision {
+	opacity: 0 !important;
+}
+/*
+svg g.state-labels > g.successor-state > image {
+	height: 64px;
+	width: 64px;
+}
+svg g.state-labels > g.periphery-major > image {
+	height: 32px;
+	width: 32px;
+}*/
+svg g.state-labels > g > text {
+	fill: #fff;
+	font-style: italic;
+	font-weight: bold;
+	pointer-events: none;
+	text-shadow: 0 0 5px #000;
+}
+svg g.state-labels > g > text:nth-child(1) {
+	font-size: 1.1em;
+}
+svg g.state-labels > g.successor-state > text:nth-child(1) {
+	font-size: 1.4em;
+	/*transform: translate(64px, 1.7em);*/
+}
+svg g.state-labels > g.successor-state > text:nth-child(2) {
+	font-size: 1.2em;
+	/*transform: translate(64px, 3.2em);*/
+}
+/*
+taurian-concordat #b55731
+magistracy-of-canopus #2d9889
+marian-hegemony #e68a4b
+oberon-confederation #c79f00
+outworlds-alliance #969179
+periphery #dcdcdc
+*/
+
+/* LEGEND STYLES */
+svg g.legend rect.scale-axis-background {
+	fill: #000024;
+	shape-rendering: crispEdges;
+	stroke: #fff;
+	stroke-width: 1;
+}
+svg g.legend text {
+	fill: #fff;
+}
+svg g.legend g.scale-axis path,
+svg g.legend g.scale-axis line {
+	fill: none;
+	stroke: #fff;
+	shape-rendering: crispEdges;
+}
