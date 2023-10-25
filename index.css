@@ -1059,6 +1059,11 @@ svg.planets-userdata-highlight g.planet-circles circle.has-userdata {
 	stroke-width: 2px;
 }
 
+svg.planets-userdata-visible g.planet-circles circle.has-combat,
+svg.planets-userdata-highlight g.planet-circles circle.has-combat {
+	stroke: #e00;
+	stroke-width: 2px;
+}
 
 circle.planet:hover
 {
@@ -1097,6 +1102,11 @@ svg g.planet-names text.hidden-system {
 
 svg g.planet-names text.depot {
 	fill: #0e0;
+	/*text-shadow: 1px 1px #999;*/
+}
+
+svg g.planet-names text.has-combat {
+	fill: #e00;
 	/*text-shadow: 1px 1px #999;*/
 }
 

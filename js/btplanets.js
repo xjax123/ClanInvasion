@@ -317,6 +317,7 @@ define(['js/lib/d3.min','js/btplanets_generateborders'], function(d3,generateBor
 					.classed('major',function(d){return d.type.toLowerCase() == 'major'})
 					.classed('capital',function(d){return d.type.toLowerCase() == 'capital'})
 					.classed('depot',function(d){return d.depot.toLowerCase() == 'yes'})
+					.classed('has-combat',function(d){return d.combat.toLowerCase() == 'yes'})
 					.classed('uninhabited', function(d) {
 						return d.affiliation === '?' || d.affiliation.toLowerCase() === 'no record';
 					})
