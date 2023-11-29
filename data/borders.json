@@ -19,8 +19,8 @@
         "path": "M390,345 L388,380 L273,424 L218,438 L183,442 L182,432 L133,415 L134,397 L157,391 L214,361 L266,363 L295,351 L400,333 z M405,490 L316,492 L313,475 L403,476 z"
     },
     {
-        "name": "magistracy-of-canopus",
-        "display": "Magistracy of Canopus",
+        "name": "clan-golden-moose",
+        "display": "Clan Golden Moose",
         "rulers": "House Centrella",
         "type": "periphery-major",
         "centroid": [-165,-420],
