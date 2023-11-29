@@ -1152,6 +1152,10 @@ svg.labels-all g.state-labels {
 svg g.state-labels > g.out-of-vision {
 	opacity: 0 !important;
 }
+svg g.state-labels > g.clan-power > image {
+	height: 64px;
+	width: 64px;
+}
 /*
 svg g.state-labels > g.successor-state > image {
 	height: 64px;
