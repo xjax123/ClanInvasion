@@ -41,6 +41,28 @@
         "path": ""
     },
     {
+        "name": "clan-golden-moose",
+        "display": "Clan Golden Moose",
+        "rulers": "House Centrella",
+        "type": "periphery-major",
+        "centroid": [-165,-420],
+        "dims": [140,70],
+        "preferredLabelPos": [-160, -500],
+        "labelAnchor": "top left",
+        "path": ""
+    },
+    {
+        "name": "clan-piranha-rat",
+        "display": "Clan Piranha Rat",
+        "rulers": "House Centrella",
+        "type": "periphery-major",
+        "centroid": [-206,-360],
+        "dims": [140,70],
+        "preferredLabelPos": [-160, -500],
+        "labelAnchor": "top left",
+        "path": ""
+    },
+    {
         "name": "marian-hegemony",
         "display": "Marian Hegemony",
         "rulers": "House O'Reilly",
