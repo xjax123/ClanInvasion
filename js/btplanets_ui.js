@@ -770,8 +770,6 @@ define(['js/lib/d3.min', 'js/lib/tinymce/tinymce.min.js', 'js/btplanets', 'js/bt
 					html += '<button class="append-route" title="add this system to the current route"><span class="fa fa-plus"></span></button>';
 					html += '<p class="coordinates"><span>Coord.: '+d.x+', '+d.y+'</span></p>';
 					html += '<p>Political affiliation: '+d.affiliation+'</p>';
-					html += '<p class="ci"><span>CI value: ' + d.ci+'</span></p>';
-					html += '<p class="depot"><span>Supply depot: ' + d.depot+'</span></p>';
 					html += '<p>Known systems within jump range:<br>' + neighborsHtml + '</p>';
 					html += '<p>User defined system info (click to edit):</p>';
 					html += '<div class="userdata-rte" id="rte-'+d.index+'" data-system-idx="'+d.index+'" data-system-name="'+d.name+'">'+userdata+'</div>';
