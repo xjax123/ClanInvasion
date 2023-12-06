@@ -2892,7 +2892,7 @@
     "name": "Amber Grove",
     "x": 272.88,
     "y": -362.39,
-    "affiliation": "Clan Storm Hawk",
+    "affiliation": "Taurian Concordat",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -3138,7 +3138,7 @@
     "name": "Anaheim",
     "x": 299.33,
     "y": -311.76,
-    "affiliation": "Clan Storm Hawk",
+    "affiliation": "Federated Commonwealth",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -3757,7 +3757,7 @@
     "name": "Antipolo",
     "x": -94.87,
     "y": -268.85,
-    "affiliation": "Clan Golden Moose",
+    "affiliation": "Free Worlds League",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -5811,7 +5811,7 @@
     "name": "Ayn Tarma",
     "x": -172.47,
     "y": -302.75,
-    "affiliation": "Clan Piranha Rat",
+    "affiliation": "Free Worlds League",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -7515,7 +7515,7 @@
     "name": "Bellatrix",
     "x": 54.28,
     "y": -351.61,
-    "affiliation": "Clan Celestial Lion",
+    "affiliation": "Capellan Confederation",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -9360,7 +9360,7 @@
     "name": "Borden",
     "x": 51.43,
     "y": -370.73,
-    "affiliation": "Clan Celestial Lion",
+    "affiliation": "Capellan Confederation",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -10113,7 +10113,7 @@
     "name": "Brisbane",
     "x": 154.95,
     "y": -398.78,
-    "affiliation": "Clan Void Dragon",
+    "affiliation": "Taurian Concordat",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -10291,7 +10291,7 @@
     "name": "Bromhead",
     "x": 159.74,
     "y": -377.48,
-    "affiliation": "Clan Void Dragon",
+    "affiliation": "Federated Commonwealth",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -11135,7 +11135,7 @@
     "name": "Caldwell",
     "x": 332.59,
     "y": -325.18,
-    "affiliation": "Clan Storm Hawk",
+    "affiliation": "Federated Commonwealth",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -14509,7 +14509,7 @@
     "name": "Cohagen",
     "x": 372.22,
     "y": -316.23,
-    "affiliation": "Clan Storm Hawk",
+    "affiliation": "Federated Commonwealth",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -14616,7 +14616,7 @@
     "name": "Cole Harbour",
     "x": -121.03,
     "y": -292.44,
-    "affiliation": "Clan Golden Moose",
+    "affiliation": "Free Worlds League",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -14795,7 +14795,7 @@
     "name": "Columbine",
     "x": 74.95,
     "y": -345.96,
-    "affiliation": "Clan Celestial Lion",
+    "affiliation": "Capellan Confederation",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -16950,7 +16950,7 @@
     "name": "Decatur",
     "x": 54.15,
     "y": -336.26,
-    "affiliation": "Clan Celestial Lion",
+    "affiliation": "Capellan Confederation",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -18849,7 +18849,7 @@
     "name": "Drozan",
     "x": 31.27,
     "y": -369.94,
-    "affiliation": "Clan Snow Raven",
+    "affiliation": "Capellan Confederation",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -19682,7 +19682,7 @@
     "name": "El Giza",
     "x": -68.86,
     "y": -274,
-    "affiliation": "Clan Golden Moose",
+    "affiliation": "Free Worlds League",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -25705,7 +25705,7 @@
     "name": "Guangzho",
     "x": -109.82,
     "y": -285.4,
-    "affiliation": "Clan Golden Moose",
+    "affiliation": "Free Worlds League",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -28952,7 +28952,7 @@
     "name": "Hudeiba",
     "x": -78.58,
     "y": -285.4,
-    "affiliation": "Clan Golden Moose",
+    "affiliation": "Free Worlds League",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -29287,7 +29287,7 @@
     "name": "Hyalite",
     "x": 268.82,
     "y": -354.19,
-    "affiliation": "Clan Storm Hawk",
+    "affiliation": "Federated Commonwealth",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -31129,7 +31129,7 @@
     "name": "Jacson",
     "x": 110.61,
     "y": -346.45,
-    "affiliation": "Clan Celestial Lion",
+    "affiliation": "Capellan Confederation",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -31241,7 +31241,7 @@
     "name": "Jansen's Hold",
     "x": 183.99,
     "y": -378.28,
-    "affiliation": "Clan Void Dragon",
+    "affiliation": "Taurian Concordat",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -38488,7 +38488,7 @@
     "name": "Lothair",
     "x": 266.23,
     "y": -337.13,
-    "affiliation": "Clan Storm Hawk",
+    "affiliation": "Federated Commonwealth",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -39330,7 +39330,7 @@
     "name": "MacLeod's Land",
     "x": 169.47,
     "y": -387.17,
-    "affiliation": "Clan Void Dragon",
+    "affiliation": "Taurian Concordat",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -39435,7 +39435,7 @@
     "name": "Madras",
     "x": 70.55,
     "y": -325.24,
-    "affiliation": "Clan Celestial Lion",
+    "affiliation": "Capellan Confederation",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -43575,7 +43575,7 @@
     "name": "Mitchel",
     "x": 108.81,
     "y": -328.31,
-    "affiliation": "Clan Celestial Lion",
+    "affiliation": "Capellan Confederation",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -44516,7 +44516,7 @@
     "name": "Mosiro",
     "x": -65.14,
     "y": -280.74,
-    "affiliation": "Clan Golden Moose",
+    "affiliation": "Free Worlds League",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -46211,7 +46211,7 @@
     "name": "New Ganymede",
     "x": 197.42,
     "y": -377.37,
-    "affiliation": "Clan Void Dragon",
+    "affiliation": "Taurian Concordat",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -46965,7 +46965,7 @@
     "name": "New Vallis",
     "x": 191.79,
     "y": -375.56,
-    "affiliation": "Clan Void Dragon",
+    "affiliation": "Taurian Concordat",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -51193,7 +51193,7 @@
     "name": "Pierce",
     "x": 343.01,
     "y": -310.48,
-    "affiliation": "Clan Storm Hawk",
+    "affiliation": "Federated Commonwealth",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -51375,7 +51375,7 @@
     "name": "Pinard",
     "x": 173.96,
     "y": -389.37,
-    "affiliation": "Clan Void Dragon",
+    "affiliation": "Taurian Concordat",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -52313,7 +52313,7 @@
     "name": "Principia",
     "x": 0.02,
     "y": -357.85,
-    "affiliation": "Clan Snow Raven",
+    "affiliation": "Capellan Confederation",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -54020,7 +54020,7 @@
     "name": "Renfield",
     "x": 222.82,
     "y": -385.18,
-    "affiliation": "Clan Void Dragon",
+    "affiliation": "Taurian Concordat",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -54774,7 +54774,7 @@
     "name": "Rollis",
     "x": 150.33,
     "y": -386.16,
-    "affiliation": "Clan Void Dragon",
+    "affiliation": "Capellan Confederation",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -55684,7 +55684,7 @@
     "name": "Sadurni",
     "x": -14.99,
     "y": -346.83,
-    "affiliation": "Clan Snow Raven",
+    "affiliation": "Free Worlds League",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -59360,7 +59360,7 @@
     "name": "Skvorec",
     "x": -158.2,
     "y": -307.69,
-    "affiliation": "Clan Piranha Rat",
+    "affiliation": "Free Worlds League",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -65650,7 +65650,7 @@
     "name": "Turin",
     "x": 21.18,
     "y": -367.85,
-    "affiliation": "Clan Snow Raven",
+    "affiliation": "Capellan Confederation",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -67091,7 +67091,7 @@
     "name": "Vard",
     "x": 74.17,
     "y": -354.97,
-    "affiliation": "Clan Celestial Lion",
+    "affiliation": "Capellan Confederation",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -68637,7 +68637,7 @@
     "name": "Warren",
     "x": 298.03,
     "y": -328.31,
-    "affiliation": "Clan Storm Hawk",
+    "affiliation": "Federated Commonwealth",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -69065,7 +69065,7 @@
     "name": "Weippe",
     "x": 314.42,
     "y": -307.1,
-    "affiliation": "Clan Storm Hawk",
+    "affiliation": "Federated Commonwealth",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -69748,7 +69748,7 @@
     "name": "Wisconsin",
     "x": -158.69,
     "y": -296.79,
-    "affiliation": "Clan Piranha Rat",
+    "affiliation": "Free Worlds League",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -70342,7 +70342,7 @@
     "name": "Xieng Khouang",
     "x": 85.29,
     "y": -311.76,
-    "affiliation": "Clan Celestial Lion",
+    "affiliation": "Capellan Confederation",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -70464,7 +70464,7 @@
     "name": "Yanchep",
     "x": -133.42,
     "y": -287.28,
-    "affiliation": "Clan Piranha Rat",
+    "affiliation": "Free Worlds League",
     "aliases": [],
     "objects": [],
     "neighbors": [
