@@ -19469,7 +19469,7 @@
     "name": "Edwards",
     "x": 132.08,
     "y": -32.36,
-    "affiliation": "Clan Celestial Lion",
+    "affiliation": "Federated Commonwealth",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -49272,7 +49272,7 @@
     "name": "Orkney",
     "x": -48.6,
     "y": 234.92,
-    "affiliation": "Clan Storm Hawk",
+    "affiliation": "Federated Commonwealth",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -49295,7 +49295,7 @@
     "name": "Orkney (TC)",
     "x": 378.87,
     "y": -399.29,
-    "affiliation": "No record",
+    "affiliation": "Clan Storm Hawk",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -51547,7 +51547,7 @@
     "name": "Plataea",
     "x": 113.1,
     "y": -122.49,
-    "affiliation": "No Record",
+    "affiliation": "Federated Commonwealth",
     "aliases": [],
     "objects": [],
     "neighbors": [
@@ -66332,7 +66332,7 @@
     "name": "Undra",
     "x": 113.55,
     "y": -116.1,
-    "affiliation": "No record",
+    "affiliation": "Federated Commonwealth",
     "aliases": [],
     "objects": [],
     "neighbors": [
