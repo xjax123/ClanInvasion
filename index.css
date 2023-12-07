@@ -1055,7 +1055,7 @@ svg.planets-capitals g.planet-circles path.capital {
 }
 svg.planets-userdata-visible g.planet-circles circle.has-userdata,
 svg.planets-userdata-highlight g.planet-circles circle.has-userdata {
-	stroke: #fc0;
+	stroke: rgb(255, 255, 255);
 	stroke-width: 2px;
 }
 
